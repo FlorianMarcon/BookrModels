@@ -1,4 +1,5 @@
 import Place from "./Place";
+import { Food } from "..";
 
 export default interface FoodGroup {
 
@@ -6,6 +7,7 @@ export default interface FoodGroup {
 	
 	name				:	string;
 
-
 	place?				:	Place;
+
+	foods?				:	Array<Food>;
 }
