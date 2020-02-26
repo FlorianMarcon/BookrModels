@@ -1,4 +1,4 @@
-import Place from "./Place";
+import {Place} from "./Place";
 
 export enum Roles {
 	ADMIN = "ADMIN",
@@ -6,7 +6,7 @@ export enum Roles {
 	PLACE = "PLACE"
 };
 
-export default interface User{
+export interface User{
 
 	_id		:	string;
 	

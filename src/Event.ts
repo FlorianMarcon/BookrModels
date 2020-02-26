@@ -1,6 +1,6 @@
-import Place from "./Place";
+import {Place} from "./Place";
 
-export default interface Event {
+export interface Event {
 
 	_id					:	string;
 	

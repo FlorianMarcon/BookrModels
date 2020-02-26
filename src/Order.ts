@@ -29,7 +29,7 @@ export interface OrderMenu {
 }
 
 
-export default interface Order {
+export interface Order {
 
 	_id				:	string;
 

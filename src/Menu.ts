@@ -1,4 +1,4 @@
-export default interface Menu {
+export interface Menu {
 
 	_id				:	string;
 

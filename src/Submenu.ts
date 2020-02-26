@@ -1,7 +1,7 @@
-import Place from "./Place";
-import Food from "./Food";
+import {Place} from "./Place";
+import {Food} from "./Food";
 
-export default interface Submenu {
+export interface Submenu {
 
 	_id				:	string;
 

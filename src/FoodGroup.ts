@@ -1,7 +1,7 @@
-import Place from "./Place";
-import { Food } from "..";
+import {Place} from "./Place";
+import { Food } from "./Food";
 
-export default interface FoodGroup {
+export interface FoodGroup {
 
 	_id					:	string;
 	
