@@ -1,3 +1,5 @@
+import { Place } from "./Place";
+import { Food } from "./Food";
 
 export enum OrderStatus {
 	ORDERED = "ORDERED",
@@ -43,6 +45,10 @@ export interface Order {
 
 	price			:	number;
 
-	status		:	OrderStatus;
+	status			:	OrderStatus;
+
+	place			:	Place;
+
+	foods			:	Array<Food>;
 
 }
