@@ -7,11 +7,11 @@ export interface Menu {
 
 	name			:	string;
 
-	description?		:	string;
+	description		:	string;
 
 	price			:	number;
 
-	place?			:	Place;
+	place			:	Place;
 
-	submenues?		:	Array<Submenu>;
+	submenues		:	Array<Submenu>;
 }

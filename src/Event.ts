@@ -12,5 +12,5 @@ export interface Event {
 
 	endDate				:	Date;
 
-	places?				:	Array<Place>;
+	places				:	Array<Place>;
 }

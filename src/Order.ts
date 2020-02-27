@@ -1,5 +1,8 @@
 import { Place } from "./Place";
 import { Food } from "./Food";
+import { Submenu } from "./Submenu";
+import { Menu } from "./Menu";
+import { User } from "./User";
 
 export enum OrderStatus {
 	ORDERED = "ORDERED",
@@ -15,9 +18,9 @@ export enum OrderStatus {
  *OrderSubmenu is stocked directly in same collection than OrderMenu
  */
 export interface OrderSubmenu {
-	idSubmenu				:	string;
+	submenu			:	Submenu;
 
-	idFoods?			:	string[];
+	idFoods			:	string[];
 }
 
 /**
@@ -25,9 +28,9 @@ export interface OrderSubmenu {
  *Ordermenu is stocked directly in same collection than Order
  */
 export interface OrderMenu {
-	idMenu				:	string;
+	menu			:	Menu;
 
-	submenues?		:	OrderSubmenu[];
+	submenues		:	OrderSubmenu[];
 }
 
 
@@ -35,16 +38,16 @@ export interface Order {
 
 	_id				:	string;
 
-	idUser			:	string;
-	
-	menues?			:	OrderMenu[];
+	user			:	User;
+
+	menues			:	OrderMenu[];
 
 	price			:	number;
 
 	status			:	OrderStatus;
 
-	place?			:	Place;
+	place			:	Place;
 
-	foods?			:	Array<Food>;
+	foods			:	Array<Food>;
 
 }

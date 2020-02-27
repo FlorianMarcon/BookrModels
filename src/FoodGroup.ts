@@ -7,7 +7,7 @@ export interface FoodGroup {
 	
 	name				:	string;
 
-	place?				:	Place;
+	place				:	Place;
 
-	foods?				:	Array<Food>;
+	foods				:	Array<Food>;
 }

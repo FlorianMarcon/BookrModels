@@ -6,9 +6,9 @@ export interface Place {
 
 	address		:	string;
 
-	cashback?	:	Number;
+	cashback	:	Number;
 
 	rating		:	Number;
 
-	imageUrl?			:	string;
+	imageUrl			:	string;
 }

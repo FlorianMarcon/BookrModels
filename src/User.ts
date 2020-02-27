@@ -20,5 +20,5 @@ export interface User{
 
 	role		:	Roles;
 
-	place?		:	Place
+	place		:	Place
 }

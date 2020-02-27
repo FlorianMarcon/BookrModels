@@ -9,11 +9,11 @@ export interface Food {
 
 	price		:	number;
 
-	description?		:	string;
+	description		:	string;
 
-	imageUrl?			:	string;
+	imageUrl			:	string;
 
-	place?				:	Place;
+	place				:	Place;
 
-	foodGroup?			:	FoodGroup;
+	foodGroup			:	FoodGroup;
 }

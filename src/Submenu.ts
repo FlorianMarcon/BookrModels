@@ -11,7 +11,7 @@ export interface Submenu {
 
 	idMenu			:	string;
 
-	place?			:	Place;
+	place			:	Place;
 
-	foods?			:	Array<Food>;
+	foods			:	Array<Food>;
 }
