@@ -35,12 +35,8 @@ export interface Order {
 
 	_id				:	string;
 
-	idPlace			:	string;
-
 	idUser			:	string;
 	
-	idFoods			:	Array<string>;
-
 	menues?			:	OrderMenu[];
 
 	price			:	number;

@@ -5,8 +5,6 @@ export interface Menu {
 
 	_id				:	string;
 
-	idPlace			:	string;
-	
 	name			:	string;
 
 	description?		:	string;

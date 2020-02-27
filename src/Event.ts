@@ -8,8 +8,6 @@ export interface Event {
 
 	contentUrl			:	string;
 
-	idPlaces			:	Array<string>;
-
 	startDate			:	Date;
 
 	endDate				:	Date;

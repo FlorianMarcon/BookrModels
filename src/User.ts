@@ -20,7 +20,5 @@ export interface User{
 
 	role		:	Roles;
 
-	idPlace		:	string;
-
 	place?		:	Place
 }

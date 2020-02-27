@@ -9,10 +9,6 @@ export interface Food {
 
 	price		:	number;
 
-	idPlace?			:	string;
-
-	idFoodGroup?			:	string;
-
 	description?		:	string;
 
 	imageUrl?			:	string;
