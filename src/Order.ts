@@ -43,8 +43,8 @@ export interface Order {
 
 	status			:	OrderStatus;
 
-	place			:	Place;
+	place?			:	Place;
 
-	foods			:	Array<Food>;
+	foods?			:	Array<Food>;
 
 }

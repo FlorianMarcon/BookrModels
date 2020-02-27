@@ -11,7 +11,7 @@ export interface Menu {
 
 	price			:	number;
 
-	place			:	Place;
+	place?			:	Place;
 
-	submenues		:	Array<Submenu>;
+	submenues?		:	Array<Submenu>;
 }
