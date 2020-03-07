@@ -22,3 +22,40 @@ export interface User{
 
 	place		:	Place
 }
+
+export interface ICreateUserInput extends Partial<User> {
+	firstname	:	string;
+
+	lastname	:	string;
+
+	email		:	string;
+
+	password	:	string;
+}
+
+export interface IUpdateUserInput extends Partial<User> {
+
+	_id			:	string;
+	
+	firstname?	:	string;
+
+	lastname?	:	string;
+
+	email?		:	string;
+
+	password?	:	string;
+
+	role?		:	Roles;
+
+	idPlace?	:	string;
+}
+
+export interface IAuthInput extends Partial<User> {
+	email		:	string;
+
+	password	:	string;
+}
+
+export interface IAuthData {
+	userId		:	string;
+}
