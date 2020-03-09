@@ -6,9 +6,21 @@ export interface Place {
 
 	address		:	string;
 
-	cashback	:	Number;
+	cashback	:	number;
 
-	rating		:	Number;
+	rating		:	number;
 
 	imageUrl			:	string;
+}
+
+
+export interface ICreatePlaceInput extends Partial<Place> {
+
+	name	:	string;
+
+	address	:	string;
+
+	cashback	:	number;
+
+	image?	:	any;
 }
