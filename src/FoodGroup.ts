@@ -11,3 +11,7 @@ export interface FoodGroup {
 
 	foods				:	Array<Food>;
 }
+
+export interface ICreateFoodGroupInput extends Partial<FoodGroup> {
+	name				:	string;
+}
