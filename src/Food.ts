@@ -17,3 +17,13 @@ export interface Food {
 
 	foodGroup			:	FoodGroup;
 }
+
+export interface ICreateFoodInput extends Partial<Food> {
+	name			:	string;	
+
+	price			:	number;
+
+	description?	:	string;
+
+	idFoodGroup?	:	string;
+}
