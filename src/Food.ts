@@ -3,7 +3,7 @@ import {FoodGroup} from "./FoodGroup";
 
 export interface Food {
 
-	_id			:	string;
+	_id			:	number;
 	
 	name		:	string;
 
@@ -25,5 +25,5 @@ export interface ICreateFoodInput extends Partial<Food> {
 
 	description?	:	string;
 
-	idFoodGroup?	:	string;
+	idFoodGroup?	:	number;
 }

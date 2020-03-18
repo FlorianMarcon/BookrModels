@@ -3,7 +3,7 @@ import { Submenu } from "./Submenu";
 
 export interface Menu {
 
-	_id				:	string;
+	_id				:	number;
 
 	name			:	string;
 
@@ -14,4 +14,13 @@ export interface Menu {
 	place			:	Place;
 
 	submenues		:	Array<Submenu>;
+}
+
+export interface ICreateMenu extends Partial<Menu> {
+	name		:	string;
+
+	description?		:	string;
+
+	price				:	number;
+
 }

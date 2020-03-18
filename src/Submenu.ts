@@ -3,13 +3,13 @@ import {Food} from "./Food";
 
 export interface Submenu {
 
-	_id				:	string;
+	_id				:	number;
 
 	name			:	string;
 
 	quantity		:	number;
 
-	idMenu			:	string;
+	idMenu			:	number;
 
 	place			:	Place;
 

@@ -3,7 +3,7 @@ import { Food } from "./Food";
 
 export interface FoodGroup {
 
-	_id					:	string;
+	_id					:	number;
 	
 	name				:	string;
 
