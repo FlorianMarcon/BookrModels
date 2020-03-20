@@ -27,3 +27,7 @@ export interface ICreateFoodInput extends Partial<Food> {
 
 	idFoodGroup?	:	number;
 }
+
+export interface IFoodOptionInput {
+	onlyUncathegorized:	boolean;
+}
