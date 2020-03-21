@@ -1,5 +1,5 @@
 import { Place } from "./Place";
-import { Submenu } from "./Submenu";
+import { Submenu, ICreateSubmenuInput } from "./Submenu";
 
 export interface Menu {
 
@@ -16,11 +16,13 @@ export interface Menu {
 	submenues		:	Array<Submenu>;
 }
 
-export interface ICreateMenu extends Partial<Menu> {
+export interface ICreateMenuInput extends Partial<Menu> {
 	name		:	string;
 
 	description?		:	string;
 
 	price				:	number;
+
+	createSubmenuesList?	:	Array<ICreateSubmenuInput>;
 
 }

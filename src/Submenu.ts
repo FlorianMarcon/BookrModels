@@ -1,5 +1,6 @@
 import {Place} from "./Place";
 import {Food} from "./Food";
+import { Menu } from "./Menu";
 
 export interface Submenu {
 
@@ -9,9 +10,21 @@ export interface Submenu {
 
 	quantity		:	number;
 
-	idMenu			:	number;
-
 	place			:	Place;
 
 	foods			:	Array<Food>;
+
+	menu			:	Menu;
+}
+
+
+export interface ICreateSubmenuInput  extends Partial<Submenu> {
+
+	name				:	string;
+
+	quantity?			:	number;
+
+	idFoods?			:	number[];
+
+	idMenu				:	number | null;
 }
