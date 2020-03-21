@@ -25,7 +25,7 @@ export interface ICreateFoodInput extends Partial<Food> {
 
 	description?	:	string;
 
-	idFoodGroup?	:	number;
+	idFoodGroup?	:	number | null;
 }
 
 export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
@@ -37,7 +37,7 @@ export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
 
 	description?	:	string;
 
-	idFoodGroup?	:	number;
+	idFoodGroup?	:	number | null;
 
 }
 export interface IFoodOptionInput {
