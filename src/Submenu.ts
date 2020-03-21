@@ -14,7 +14,7 @@ export interface Submenu {
 
 	foods			:	Array<Food>;
 
-	menu			:	Menu;
+	menu?			:	Menu;
 }
 
 
