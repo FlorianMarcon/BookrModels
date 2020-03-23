@@ -24,5 +24,14 @@ export interface ICreateMenuInput extends Partial<Menu> {
 	price				:	number;
 
 	createSubmenuesList?	:	Array<ICreateSubmenuInput>;
+}
 
+export interface IUpdateMenuInput extends Partial<Menu> {
+	_id					:	number;
+
+	name?				:	string;
+
+	description?		:	string;
+
+	price?				:	number;
 }
