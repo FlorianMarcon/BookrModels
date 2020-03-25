@@ -28,3 +28,14 @@ export interface ICreateSubmenuInput  extends Partial<Submenu> {
 
 	idMenu				:	number | null;
 }
+
+export interface IUpdateSubmenuInput  extends Partial<Submenu> {
+
+	_id					:	number;
+	
+	name?				:	string;
+
+	quantity?			:	number;
+
+	idFoods?			:	number[];
+}
