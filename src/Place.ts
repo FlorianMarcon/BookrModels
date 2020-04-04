@@ -21,4 +21,6 @@ export interface ICreatePlaceInput extends Partial<Place> {
 	address	:	string;
 
 	cashback	:	number;
+
+	idPlaceCategory?	:	number;
 }
