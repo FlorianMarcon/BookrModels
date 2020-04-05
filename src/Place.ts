@@ -1,3 +1,5 @@
+import { PlaceCategory } from "./PlaceCategory";
+
 export interface Place {
 
 	_id			:	number;
@@ -10,7 +12,9 @@ export interface Place {
 
 	rating		:	number;
 
-	imageUrl			:	string;
+	imageUrl	:	string;
+
+	placeCategory:	PlaceCategory;
 }
 
 
