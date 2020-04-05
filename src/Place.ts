@@ -28,3 +28,16 @@ export interface ICreatePlaceInput extends Partial<Place> {
 
 	idPlaceCategory?	:	number;
 }
+
+export interface IUpdatePlaceInput {
+
+	_id					:	number;
+
+	name?				:	string;
+
+	address?			:	string;
+
+	cashback?			:	number;
+
+	idPlaceCategory?	:	number;
+}
