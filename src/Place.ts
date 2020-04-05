@@ -26,7 +26,7 @@ export interface ICreatePlaceInput extends Partial<Place> {
 
 	cashback	:	number;
 
-	idPlaceCategory?	:	number;
+	idPlaceCategory?	:	number | null;
 }
 
 export interface IUpdatePlaceInput {
@@ -39,5 +39,5 @@ export interface IUpdatePlaceInput {
 
 	cashback?			:	number;
 
-	idPlaceCategory?	:	number;
+	idPlaceCategory?	:	number | null;
 }
