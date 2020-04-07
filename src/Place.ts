@@ -13,6 +13,7 @@ export interface Place {
 	rating		:	number;
 
 	imageUrl	:	string;
+	logoUrl		:	string;
 
 	placeCategory:	PlaceCategory;
 
