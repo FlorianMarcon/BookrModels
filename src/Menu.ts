@@ -11,6 +11,8 @@ export interface Menu {
 
 	price			:	number;
 
+	imageUrl		:	string;
+
 	place			:	Place;
 
 	submenues		:	Array<Submenu>;
