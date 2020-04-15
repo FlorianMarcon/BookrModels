@@ -1,4 +1,6 @@
 import { PlaceCategory } from "./PlaceCategory";
+import { FoodGroup } from "./FoodGroup";
+import { Menu } from "./Menu";
 
 export interface Place {
 
@@ -18,6 +20,9 @@ export interface Place {
 
 	latitude	:	number;
 	longitude	:	number;
+
+	foodsgroups?	:	Array<FoodGroup>;
+	menues?		:	Array<Menu>;
 }
 
 
