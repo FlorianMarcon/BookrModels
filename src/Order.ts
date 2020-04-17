@@ -1,8 +1,8 @@
-import { Place } from "./Place";
 import { Food } from "./Food";
-import { Submenu } from "./Submenu";
 import { Menu } from "./Menu";
+import { Place } from "./Place";
 import { User } from "./User";
+import { Submenu } from "./Submenu";
 
 export enum OrderStatus {
 	ORDERED = "ORDERED",
@@ -12,42 +12,59 @@ export enum OrderStatus {
 	READY = "READY",
 };
 
-
-/**
- *This class is used to create an order only.
- *OrderSubmenu is stocked directly in same collection than OrderMenu
- */
-export interface OrderSubmenu {
-	submenu			:	Submenu;
-
-	idFoods			:	string[];
+export interface ICreateOrderSubmenuInput {
+	idSubmenu:	number;
+	idFoods:	Array<number>;
 }
 
-/**
- *This class is used to create an order only.
- *Ordermenu is stocked directly in same collection than Order
- */
-export interface OrderMenu {
-	menu			:	Menu;
+export interface ICreateOrderMenuInput {
+	idMenu	:	number;
+	submenues:	Array<ICreateOrderSubmenuInput>;
+}
 
-	submenues		:	OrderSubmenu[];
+export interface ICreateOrderInput {
+	idPlace	:	number;
+
+	date	:	Date;
+
+	idFoods?	:	Array<number>;
+
+	menues?	:	Array<ICreateOrderMenuInput>;
+}
+
+export interface IOrderSubmenu {
+	idSubmenu:	number;
+	submenu?:	Submenu;
+
+	idFoods:	Array<number>;
+	foods?:		Array<Food>;
+}
+
+export interface IOrderMenu {
+	idMenu	:	number;
+	menu	:	Menu;
+
+	price	:	 number;
+	submenues	:	Array<IOrderSubmenu>;
 }
 
 
-export interface Order {
+export interface IOrder {
 
-	_id				:	string;
+	_id				:	number;
 
-	user			:	User;
-
-	menues			:	OrderMenu[];
+	idUser			:	number;
+	user?			:	User;
 
 	price			:	number;
 
 	status			:	OrderStatus;
 
-	place			:	Place;
+	idPlace			:	number;
+	place?			:	Place;
 
-	foods			:	Array<Food>;
+	idFoods			:	Array<number>;
+	foods?			:	Array<Food>;
 
+	date			:	Date;
 }
