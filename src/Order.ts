@@ -5,6 +5,7 @@ import { User } from "./User";
 import { Submenu } from "./Submenu";
 
 export enum OrderStatus {
+	HAMPER = "HAMPER",
 	ORDERED = "ORDERED",
 	ACCEPTED = "ACCEPTED",
 	REFUSED = "REFUSED",
