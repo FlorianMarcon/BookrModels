@@ -67,4 +67,6 @@ export interface IOrder {
 	foods?			:	Array<Food>;
 
 	date			:	Date;
+
+	orderReference	:	String;
 }
