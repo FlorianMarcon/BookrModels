@@ -70,3 +70,11 @@ export interface IOrder {
 
 	orderReference	:	String;
 }
+
+export interface QOrdersOptions {
+
+	/**
+	 *Take only order in this status
+	 */
+	status?:	OrderStatus;
+}
