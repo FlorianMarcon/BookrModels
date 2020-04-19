@@ -66,6 +66,8 @@ export interface IOrder {
 	idFoods			:	Array<number>;
 	foods?			:	Array<Food>;
 
+	menues			:	Array<IOrderMenu>;
+
 	date			:	Date;
 
 	orderReference	:	String;
