@@ -23,5 +23,10 @@ export interface IUpdateDateTimeSlot {
 	end?: Date;
 
 	idPlace?	:	number;
+}
 
+export interface QDateTimeSlotsOptions {
+	
+	start?:	Date;
+	end?:	Date;
 }
