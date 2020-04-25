@@ -1,6 +1,7 @@
 import { PlaceCategory } from "./PlaceCategory";
 import { FoodGroup } from "./FoodGroup";
 import { Menu } from "./Menu";
+import { DateTimeSlot } from "./DateTimeSlot";
 
 export interface Place {
 
@@ -24,6 +25,8 @@ export interface Place {
 
 	foodsgroups?	:	Array<FoodGroup>;
 	menues?		:	Array<Menu>;
+
+	slots?		:	Array<DateTimeSlot>;
 }
 
 
