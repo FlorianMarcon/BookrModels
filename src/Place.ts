@@ -9,7 +9,11 @@ export interface Place {
 	
 	name		:	string;
 
-	address		:	string;
+	city		:	string;
+	line1		:	string;
+	line2		:	string;
+	state		:	string;
+	postCode		:	string;
 
 	cashback	:	number;
 
@@ -34,7 +38,11 @@ export interface ICreatePlaceInput extends Partial<Place> {
 
 	name	:	string;
 
-	address	:	string;
+	city		:	string;
+	line1		:	string;
+	line2		:	string;
+	state		:	string;
+	postCode		:	string;
 
 	cashback	:	number;
 
@@ -44,13 +52,28 @@ export interface ICreatePlaceInput extends Partial<Place> {
 	longitude?	:	number;
 }
 
+export interface ICreateStripeAccountInput extends Partial<Place> {
+
+	name	:	string;
+
+	city		:	string;
+	line1		:	string;
+	line2		:	string;
+	state		:	string;
+	postCode		:	string;
+}
+
 export interface IUpdatePlaceInput {
 
 	_id					:	number;
 
 	name?				:	string;
 
-	address?			:	string;
+	city?		:	string;
+	line1?		:	string;
+	line2?		:	string;
+	state?		:	string;
+	postCode?		:	string;
 
 	cashback?			:	number;
 

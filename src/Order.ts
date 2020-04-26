@@ -6,6 +6,10 @@ import { Submenu } from "./Submenu";
 
 export enum OrderStatus {
 	HAMPER = "HAMPER",
+
+	WAITINGPAIEMENT = "WAITINGPAIEMENT",
+	FAILEDPAIEMENT = "FAILEDPAIEMENT",
+	
 	ORDERED = "ORDERED",
 	ACCEPTED = "ACCEPTED",
 	REFUSED = "REFUSED",
@@ -80,4 +84,10 @@ export interface QOrdersOptions {
 	 *Take only order in this status
 	 */
 	status?:	OrderStatus;
+}
+
+
+export interface IPaymentIntent {
+	publishableKey:	String;
+	clientSecret:	String;
 }
