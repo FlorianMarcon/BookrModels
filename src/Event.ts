@@ -2,8 +2,10 @@ import {Place} from "./Place";
 
 export interface Event {
 
-	_id					:	string;
+	_id					:	number;
 	
+	title				:	string;
+
 	guardPageUrl		:	string;
 
 	contentUrl			:	string;
@@ -13,4 +15,26 @@ export interface Event {
 	endDate				:	Date;
 
 	places				:	Array<Place>;
+}
+
+export interface ICreateEventInput {
+	title				:	string;
+
+	startDate			:	Date;
+
+	endDate				:	Date;
+
+	idPlaces?				:	Array<number>;
+}
+
+export interface IUpdateEventInput {
+	_id					:	number;
+
+	title?				:	string;
+
+	startDate?			:	Date;
+
+	endDate?				:	Date;
+
+	idPlaces?				:	Array<number>;
 }
