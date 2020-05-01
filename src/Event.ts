@@ -6,9 +6,9 @@ export interface Event {
 	
 	title				:	string;
 
-	guardPageUrl		:	string;
+	guardPageUrl?		:	string;
 
-	contentUrl			:	string;
+	contentUrl?			:	string;
 
 	startDate			:	Date;
 
