@@ -3,6 +3,11 @@ import { FoodGroup } from "./FoodGroup";
 import { Menu } from "./Menu";
 import { DateTimeSlot } from "./DateTimeSlot";
 
+export enum PaymentMethod {
+	NO_VERIFICATION = "NO_VERIFICATION",
+	SMS_VERIFICATION = "SMS_VERIFICATION",
+}
+
 export interface Place {
 
 	_id			:	number;
@@ -31,6 +36,8 @@ export interface Place {
 	menues?		:	Array<Menu>;
 
 	slots?		:	Array<DateTimeSlot>;
+
+	timeToWait	:	number;
 }
 
 
@@ -50,6 +57,8 @@ export interface ICreatePlaceInput extends Partial<Place> {
 
 	latitude?	:	number;
 	longitude?	:	number;
+
+	timeToWait?	:	number;
 }
 
 export interface ICreateStripeAccountInput extends Partial<Place> {
@@ -81,4 +90,6 @@ export interface IUpdatePlaceInput {
 
 	latitude?	:	number;
 	longitude?	:	number;
+
+	timeToWait?	:	number;
 }
