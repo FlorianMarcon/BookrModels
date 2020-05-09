@@ -17,7 +17,7 @@ export interface Food {
 
 	foodGroup			:	FoodGroup;
 
-	isAvailable			:	Boolean;
+	isAvailable			:	boolean;
 }
 
 export interface ICreateFoodInput extends Partial<Food> {
@@ -41,7 +41,7 @@ export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
 
 	idFoodGroup?	:	number | null;
 
-	isAvailable?	:	Boolean;
+	isAvailable?	:	boolean;
 }
 
 export interface IFoodOptionInput {
