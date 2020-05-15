@@ -38,6 +38,8 @@ export interface Place {
 	slots?		:	Array<DateTimeSlot>;
 
 	timeToWait	:	number;
+
+	isFavorite	:	boolean;
 }
 
 
