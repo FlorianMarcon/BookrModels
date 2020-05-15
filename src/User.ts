@@ -21,6 +21,8 @@ export interface User{
 	role		:	Roles;
 
 	place		:	Place
+
+	favorites	:	Array<Place>;
 }
 
 export interface ICreateUserInput extends Partial<User> {
