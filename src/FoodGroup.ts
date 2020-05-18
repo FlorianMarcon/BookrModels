@@ -10,8 +10,18 @@ export interface FoodGroup {
 	place				:	Place;
 
 	foods				:	Array<Food>;
+
+	index				:	number;
 }
 
-export interface ICreateFoodGroupInput extends Partial<FoodGroup> {
+export interface ICreateFoodGroupInput {
 	name				:	string;
+}
+
+export interface IUpdateFoodGroupInput {
+	_id				:	number;
+
+	name?				:	string;
+
+	index?				:	number;
 }
