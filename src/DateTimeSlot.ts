@@ -18,15 +18,10 @@ export interface ICreateDateTimeSlot {
 export interface IUpdateDateTimeSlot {
 	_id:	number;
 
-	start?: Date;
+	start: Date;
 
-	end?: Date;
+	end: Date;
 
 	idPlace?	:	number;
 }
 
-export interface QDateTimeSlotsOptions {
-	
-	start?:	Date;
-	end?:	Date;
-}
