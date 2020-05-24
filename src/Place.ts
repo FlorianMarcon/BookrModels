@@ -41,7 +41,7 @@ export interface Place {
 
 	isFavorite	:	boolean;
 
-	haveStripeAccount:	boolean;
+	loginStripeLink:	string;
 }
 
 
