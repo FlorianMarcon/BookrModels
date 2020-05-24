@@ -40,6 +40,8 @@ export interface Place {
 	timeToWait	:	number;
 
 	isFavorite	:	boolean;
+
+	haveStripeAccount:	boolean;
 }
 
 
