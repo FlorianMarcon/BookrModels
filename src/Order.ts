@@ -11,10 +11,11 @@ export enum OrderStatus {
 	FAILEDPAIEMENT = "FAILEDPAIEMENT",
 	
 	ORDERED = "ORDERED",
-	ACCEPTED = "ACCEPTED",
+	ACCEPTED = "ACCEPTED", // to remove
 	REFUSED = "REFUSED",
 	COOKING = "COOKING",
 	READY = "READY",
+	COLLECT = "COLLECT",
 };
 
 export interface ICreateOrderSubmenuInput {
