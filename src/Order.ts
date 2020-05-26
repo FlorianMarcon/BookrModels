@@ -11,7 +11,6 @@ export enum OrderStatus {
 	FAILEDPAIEMENT = "FAILEDPAIEMENT",
 	
 	ORDERED = "ORDERED",
-	ACCEPTED = "ACCEPTED", // to remove
 	REFUSED = "REFUSED",
 	COOKING = "COOKING",
 	READY = "READY",
