@@ -85,6 +85,16 @@ export interface QOrdersOptions {
 	 *Take only order in this status
 	 */
 	status?:	OrderStatus;
+
+	/**
+	 * Min date to find
+	 */
+	minDate?:	Date;
+
+	/**
+	 * Max date to find
+	 */
+	maxDate?:	Date;
 }
 
 
