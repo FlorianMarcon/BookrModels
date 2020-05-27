@@ -35,6 +35,8 @@ export interface ICreateOrderInput {
 	idFoods?	:	Array<number>;
 
 	menues?	:	Array<ICreateOrderMenuInput>;
+
+	phone?	:	string;
 }
 
 export interface IOrderSubmenu {
@@ -76,6 +78,8 @@ export interface IOrder {
 	date			:	Date;
 
 	orderReference	:	String;
+
+	phone?			:	string;
 }
 
 export interface QOrdersOptions {
