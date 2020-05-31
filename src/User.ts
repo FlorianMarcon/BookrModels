@@ -1,4 +1,5 @@
 import {Place} from "./Place";
+import UserNotification from "./UserNotification";
 
 export enum Roles {
 	ADMIN = "ADMIN",
@@ -50,6 +51,8 @@ export interface IUpdateUserInput extends Partial<User> {
 	role?		:	Roles;
 
 	idPlace?	:	number;
+
+	userNotification?:	UserNotification;
 }
 
 export interface IAuthInput extends Partial<User> {
