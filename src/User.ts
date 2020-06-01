@@ -38,7 +38,7 @@ export interface ICreateUserInput extends Partial<User> {
 
 export interface IUpdateUserInput extends Partial<User> {
 
-	_id			:	number;
+	_id?			:	number;
 	
 	firstname?	:	string;
 
