@@ -87,7 +87,12 @@ export interface QOrdersOptions {
 	/**
 	 *Take only order in this status
 	 */
-	status?:	OrderStatus | Array<OrderStatus>;
+	status?:	OrderStatus
+
+	/**
+	 *Take only order if status is contained in array
+	 */
+	multipleStatus?:	Array<OrderStatus>;
 
 	/**
 	 * Min date to find
