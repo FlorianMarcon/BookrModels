@@ -37,6 +37,8 @@ export interface ICreateOrderInput {
 	menues?	:	Array<ICreateOrderMenuInput>;
 
 	phone?	:	string;
+
+	stripeToken	:	string;
 }
 
 export interface IOrderSubmenu {
