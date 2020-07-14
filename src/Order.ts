@@ -50,10 +50,22 @@ export interface IOrderSubmenu {
 }
 
 export interface IOrderMenu {
+	_id				:	number;
+
+	name			:	string;
+
+	description		:	string;
+
+	price			:	number;
+
+	imageUrl		:	string;
+
+	place			:	Place;
+
 	idMenu	:	number;
+
 	menu	:	Menu;
 
-	price	:	 number;
 	submenues	:	Array<IOrderSubmenu>;
 }
 
