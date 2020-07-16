@@ -20,6 +20,8 @@ export interface Place {
 	state		:	string;
 	postCode		:	string;
 
+	fixedFee		:	number;
+	percentageFee	:	number;
 	cashback	:	number;
 
 	rating		:	number;
@@ -55,6 +57,8 @@ export interface ICreatePlaceInput extends Partial<Place> {
 	state		:	string;
 	postCode		:	string;
 
+	fixedFee?		:	number;
+	percentageFee?	:	number;
 	cashback	:	number;
 
 	idPlaceCategory?	:	number | null;
@@ -88,6 +92,9 @@ export interface IUpdatePlaceInput {
 	state?		:	string;
 	postCode?		:	string;
 
+
+	fixedFee?			:	number;
+	percentageFee?		:	number;
 	cashback?			:	number;
 
 	idPlaceCategory?	:	number | null;
