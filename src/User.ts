@@ -7,6 +7,12 @@ export enum Roles {
 	PLACE = "PLACE"
 };
 
+export enum Platform {
+	IOS = "IOS",
+	ANDROID = "ANDROID",
+	WEB = "WEB"
+};
+
 export interface User{
 
 	_id		:	number;
