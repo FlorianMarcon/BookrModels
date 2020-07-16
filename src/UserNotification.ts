@@ -1,4 +1,6 @@
 
 export default interface UserNotification {
-	expoToken?:	string;
+	iosToken?:	string;
+	
+	androidToken?:	string;
 }
