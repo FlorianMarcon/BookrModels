@@ -4,7 +4,8 @@ import UserNotification from "./UserNotification";
 export enum Roles {
 	ADMIN = "ADMIN",
 	USER = "USER",
-	PLACE = "PLACE"
+	PLACE = "PLACE",
+	PLACE_EMPLOYEE = "PLACE_EMPLOYEE",
 };
 
 export enum Platform {
