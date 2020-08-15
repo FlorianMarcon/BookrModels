@@ -62,6 +62,44 @@ export interface IUpdateUserInput extends Partial<User> {
 	userNotification?:	UserNotification;
 }
 
+
+/**
+ * An optional full name shared by the user.
+ *
+ * These fields are populated with values that the user authorized.
+ */
+export interface IAppleAuthFullNameInput {
+	/**
+	 * Pre-nominal letters denoting title, salutation, or honorific, e.g. Dr., Mr.
+	 */
+	namePrefix: string | null;
+  
+	/**
+	 * Name bestowed upon an individual by one's parents, e.g. Johnathan
+	 */
+	givenName: string;
+  
+	/**
+	 * Secondary given name chosen to differentiate those with the same first name, e.g. Maple
+	 */
+	middleName: string | null;
+  
+	/**
+	 * Name passed from one generation to another to indicate lineage, e.g. Appleseed
+	 */
+	familyName: string;
+  
+	/**
+	 * Post-nominal letters denoting degree, accreditation, or other honor, e.g. Esq., Jr., Ph.D.
+	 */
+	nameSuffix: string | null;
+  
+	/**
+	 * Name substituted for the purposes of familiarity, e.g. "Johnny"
+	 */
+	nickname: string | null;
+}
+
 export interface IAuthInput extends Partial<User> {
 	email		:	string;
 
