@@ -14,6 +14,8 @@ export interface Place {
 	
 	name		:	string;
 
+	description	:	string;
+
 	city		:	string;
 	line1		:	string;
 	line2		:	string;
@@ -42,6 +44,7 @@ export interface Place {
 	timeToWait	:	number;
 
 	isFavorite	:	boolean;
+	isAvailable	:	boolean;
 
 	loginStripeLink:	string;
 }
@@ -50,6 +53,8 @@ export interface Place {
 export interface ICreatePlaceInput extends Partial<Place> {
 
 	name	:	string;
+
+	description?	:	string;
 
 	city		:	string;
 	line1		:	string;
@@ -86,12 +91,13 @@ export interface IUpdatePlaceInput {
 
 	name?				:	string;
 
+	description?	:	string;
+
 	city?		:	string;
 	line1?		:	string;
 	line2?		:	string;
 	state?		:	string;
 	postCode?		:	string;
-
 
 	fixedFee?			:	number;
 	percentageFee?		:	number;
@@ -103,4 +109,6 @@ export interface IUpdatePlaceInput {
 	longitude?	:	number;
 
 	timeToWait?	:	number;
+
+	isAvailable?:	boolean;
 }
