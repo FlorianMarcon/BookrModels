@@ -39,7 +39,7 @@ export interface Place {
 	foodsgroups?	:	Array<FoodGroup>;
 	menues?		:	Array<Menu>;
 
-	slots?		:	Array<DateTimeSlot>;
+	openingHours?	:	Array<DateTimeSlot>;
 
 	timeToWait	:	number;
 
