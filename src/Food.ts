@@ -18,6 +18,8 @@ export interface Food {
 	foodGroup			:	FoodGroup;
 
 	isAvailable			:	boolean;
+
+	timeToWait	:	number;
 }
 
 export interface ICreateFoodInput extends Partial<Food> {
@@ -28,6 +30,8 @@ export interface ICreateFoodInput extends Partial<Food> {
 	description?	:	string;
 
 	idFoodGroup?	:	number | null;
+
+	timeToWait?		:	number;
 }
 
 export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
@@ -42,6 +46,8 @@ export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
 	idFoodGroup?	:	number | null;
 
 	isAvailable?	:	boolean;
+
+	timeToWait?		:	number;
 }
 
 export interface IFoodOptionInput {
