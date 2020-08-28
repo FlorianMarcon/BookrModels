@@ -1,25 +1,30 @@
 import {Place} from "./Place";
 import {FoodGroup} from "./FoodGroup";
+import { DateTimeSlot } from "./DateTimeSlot";
 
 export interface Food {
 
-	_id			:	number;
+	_id				:	number;
 	
-	name		:	string;
+	name			:	string;
 
-	price		:	number;
+	price			:	number;
 
 	description		:	string;
 
-	imageUrl			:	string;
+	imageUrl		:	string;
 
-	place				:	Place;
+	place			:	Place;
 
-	foodGroup			:	FoodGroup;
+	foodGroup		:	FoodGroup;
 
-	isAvailable			:	boolean;
+	isAvailable		:	boolean;
 
-	timeToWait	:	number;
+	timeToWait		:	number;
+
+	/** FIELD RESOLVERS */
+	
+	slots?			:	Array<DateTimeSlot>
 }
 
 export interface ICreateFoodInput extends Partial<Food> {
