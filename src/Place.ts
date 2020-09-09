@@ -45,6 +45,7 @@ export interface Place {
 
 	isFavorite	:	boolean;
 	isAvailable	:	boolean;
+	isPublic	:	boolean;
 
 	loginStripeLink:	string;
 }
@@ -111,4 +112,5 @@ export interface IUpdatePlaceInput {
 	timeToWait?	:	number;
 
 	isAvailable?:	boolean;
+	isPublic?	:	boolean;
 }
