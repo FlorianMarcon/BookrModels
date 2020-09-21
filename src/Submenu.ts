@@ -9,6 +9,8 @@ export interface Submenu {
 	name			:	string;
 
 	quantity		:	number;
+	minQuantity		:	number;
+	maxQuantity		:	number;
 
 	place			:	Place;
 
@@ -23,6 +25,8 @@ export interface ICreateSubmenuInput  extends Partial<Submenu> {
 	name				:	string;
 
 	quantity?			:	number;
+	minQuantity?		:	number;
+	maxQuantity?		:	number;
 
 	idFoods?			:	number[];
 
@@ -36,6 +40,8 @@ export interface IUpdateSubmenuInput  extends Partial<Submenu> {
 	name?				:	string;
 
 	quantity?			:	number;
+	minQuantity?		:	number;
+	maxQuantity?		:	number;
 
 	idFoods?			:	number[];
 }
