@@ -18,8 +18,9 @@ export enum OrderStatus {
 };
 
 export interface ICreateOrderSubmenuInput {
-	idSubmenu:	number;
-	idFoods:	Array<number>;
+	idSubmenu		:	number;
+	idFoods?			:	Array<number> | null;
+	idSubmenuItems?	:	Array<number> | null;
 }
 
 export interface ICreateOrderMenuInput {
