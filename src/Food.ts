@@ -19,6 +19,7 @@ export interface Food {
 	foodGroup		:	FoodGroup;
 
 	isAvailable		:	boolean;
+	isPublic		:	boolean;
 
 	timeToWait		:	number;
 
@@ -51,6 +52,7 @@ export interface IUpdateFoodInput extends Partial<ICreateFoodInput> {
 	idFoodGroup?	:	number | null;
 
 	isAvailable?	:	boolean;
+	isPublic?		:	boolean;
 
 	timeToWait?		:	number;
 }
