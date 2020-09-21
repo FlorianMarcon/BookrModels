@@ -11,6 +11,7 @@ export interface Submenu {
 	quantity		:	number;
 	minQuantity		:	number;
 	maxQuantity		:	number;
+	chooseOnlyDifferentItems:	boolean;
 
 	place			:	Place;
 
@@ -27,6 +28,7 @@ export interface ICreateSubmenuInput  extends Partial<Submenu> {
 	quantity?			:	number;
 	minQuantity?		:	number;
 	maxQuantity?		:	number;
+	chooseOnlyDifferentItems?:	boolean;
 
 	idFoods?			:	number[];
 
@@ -42,6 +44,7 @@ export interface IUpdateSubmenuInput  extends Partial<Submenu> {
 	quantity?			:	number;
 	minQuantity?		:	number;
 	maxQuantity?		:	number;
+	chooseOnlyDifferentItems?:	boolean;
 
 	idFoods?			:	number[];
 }
