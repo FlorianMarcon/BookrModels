@@ -99,6 +99,8 @@ export interface IOrder {
 	orderReference	:	String;
 
 	phone?			:	string;
+
+	customer?		:	User;
 }
 
 export interface QOrdersOptions {
