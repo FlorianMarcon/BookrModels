@@ -3,6 +3,7 @@ import { Menu } from "./Menu";
 import { Place } from "./Place";
 import { User } from "./User";
 import { Submenu } from "./Submenu";
+import { SubmenuItem } from "./SubmenuItem";
 
 export enum OrderStatus {
 	HAMPER = "HAMPER",
@@ -43,11 +44,14 @@ export interface ICreateOrderInput {
 }
 
 export interface IOrderSubmenu {
+	name:		string;
+
 	idSubmenu:	number;
 	submenu?:	Submenu;
 
 	idFoods:	Array<number>;
 	foods?:		Array<Food>;
+	items?:		Array<SubmenuItem>;
 }
 
 export interface IOrderMenu {
