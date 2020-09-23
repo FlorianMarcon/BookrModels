@@ -25,7 +25,7 @@ export interface ICreateSubmenuInput  extends Partial<Submenu> {
 
 	name				:	string;
 
-	quantity?			:	number;
+	quantity			:	number;
 	minQuantity?		:	number;
 	maxQuantity?		:	number;
 	chooseOnlyDifferentItems?:	boolean;
