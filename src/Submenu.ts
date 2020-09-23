@@ -1,6 +1,7 @@
 import {Place} from "./Place";
 import {Food} from "./Food";
 import { Menu } from "./Menu";
+import { SubmenuItem } from "./SubmenuItem";
 
 export interface Submenu {
 
@@ -16,7 +17,7 @@ export interface Submenu {
 	place			:	Place;
 
 	foods			:	Array<Food>;
-
+	items?			:	Array<SubmenuItem>;
 	menu?			:	Menu;
 }
 
