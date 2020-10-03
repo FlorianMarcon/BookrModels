@@ -5,6 +5,8 @@ export interface PlaceCategory {
 	name				:	string;
 
 	imageUrl			:	string;
+
+	index				:	number;
 }
 
 export interface ICreatePlaceCategoryInput {
@@ -12,5 +14,5 @@ export interface ICreatePlaceCategoryInput {
 }
 
 export interface IUpdatePlaceCategoryInput {
-	name				:	string;
+	name?				:	string;
 }
