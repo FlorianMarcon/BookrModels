@@ -17,6 +17,7 @@ export interface Food {
 	place			:	Place;
 
 	foodGroup		:	FoodGroup;
+	indexFoodGroup	:	number;
 
 	isAvailable		:	boolean;
 	isPublic		:	boolean;
