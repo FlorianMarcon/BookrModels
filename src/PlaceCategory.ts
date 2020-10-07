@@ -7,6 +7,11 @@ export interface PlaceCategory {
 	imageUrl			:	string;
 
 	index				:	number;
+
+	/**
+	 * FIELD RESOLVER
+	 */
+	placeCount			:	number;
 }
 
 export interface ICreatePlaceCategoryInput {
