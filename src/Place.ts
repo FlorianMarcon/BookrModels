@@ -114,3 +114,12 @@ export interface IUpdatePlaceInput {
 	isAvailable?:	boolean;
 	isPublic?	:	boolean;
 }
+
+export interface IUpdatePlaceLocationByAddressInput {
+
+	city		:	string;
+	line1		:	string;
+	line2?		:	string;
+	state		:	string;
+	postCode		:	string;
+}
