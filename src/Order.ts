@@ -27,6 +27,8 @@ export interface ICreateOrderSubmenuInput {
 export interface ICreateOrderMenuInput {
 	idMenu	:	number;
 	submenues:	Array<ICreateOrderSubmenuInput>;
+
+	comment?		:	string;	
 }
 
 export interface ICreateOrderInput {
@@ -71,6 +73,8 @@ export interface IOrderMenu {
 
 	idMenu	:	number;
 
+	comment?		:	string;	
+
 	menu	:	Menu;
 
 	submenues	:	Array<IOrderSubmenu>;
@@ -103,7 +107,7 @@ export interface IOrder {
 	phone?			:	string;
 
 	comment?		:	string;
-	
+
 	customer?		:	User;
 }
 
