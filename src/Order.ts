@@ -41,6 +41,8 @@ export interface ICreateOrderInput {
 	phone?	:	string;
 
 	stripeToken	:	string;
+
+	comment?	:	string;
 }
 
 export interface IOrderSubmenu {
@@ -100,6 +102,8 @@ export interface IOrder {
 
 	phone?			:	string;
 
+	comment?		:	string;
+	
 	customer?		:	User;
 }
 
