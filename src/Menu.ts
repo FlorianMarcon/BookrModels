@@ -49,3 +49,7 @@ export interface IUpdateMenuInput extends Partial<Menu> {
 
 	price?				:	number;
 }
+
+export interface IMenuesOptionInput {
+	onlyUncathegorized:	boolean;
+}
