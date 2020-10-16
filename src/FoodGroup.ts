@@ -1,5 +1,6 @@
 import {Place} from "./Place";
 import { Food } from "./Food";
+import { Menu } from "./Menu";
 
 export interface FoodGroup {
 
@@ -12,6 +13,8 @@ export interface FoodGroup {
 	foods				:	Array<Food>;
 
 	index				:	number;
+
+	menues				:	Array<Menu>
 }
 
 export interface ICreateFoodGroupInput {
