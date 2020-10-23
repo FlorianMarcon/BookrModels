@@ -109,3 +109,11 @@ export interface IAuthInput extends Partial<User> {
 export interface IAuthData {
 	userId		:	number;
 }
+
+export interface QUsersOptions {
+
+	/**
+	 * Filter by roles
+	 */
+	roles?		:	Array<Roles>;
+}
