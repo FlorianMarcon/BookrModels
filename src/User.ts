@@ -6,6 +6,7 @@ export enum Roles {
 	USER = "USER",
 	PLACE = "PLACE",
 	PLACE_EMPLOYEE = "PLACE_EMPLOYEE",
+	COMMERCIAL = "COMMERCIAL",
 };
 
 export enum Platform {
