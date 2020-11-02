@@ -8,6 +8,12 @@ export enum PaymentMethod {
 	SMS_VERIFICATION = "SMS_VERIFICATION",
 }
 
+export enum PlaceStatus {
+	AVAILABLE = "AVAILABLE",
+	SOON_AVAILABLE = "SOON_AVAILABLE",
+	NOT_AVAILABLE = "NOT_AVAILABLE",
+	TEMPORARILY_UNAVAILABLE = "TEMPORARILY_UNAVAILABLE",
+}
 export interface Place {
 
 	_id			:	number;
@@ -46,6 +52,8 @@ export interface Place {
 	isFavorite	:	boolean;
 	isAvailable	:	boolean;
 	isPublic	:	boolean;
+
+	status		:	PlaceStatus;
 
 	loginStripeLink:	string;
 }
@@ -110,9 +118,6 @@ export interface IUpdatePlaceInput {
 	longitude?	:	number;
 
 	timeToWait?	:	number;
-
-	isAvailable?:	boolean;
-	isPublic?	:	boolean;
 }
 
 export interface IUpdatePlaceLocationByAddressInput {
