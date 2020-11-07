@@ -9,13 +9,13 @@ export interface SendNotificationInput {
 
     body    :   string; /** Body of the notification */
     
-    payload?    :  SendNotificationPayloadInput /** payload to send */   
+    payload?    :  NotificationPayload /** payload to send */   
 } 
 
 /**
  * Payload to send
  */
-export interface SendNotificationPayloadInput {
+export interface NotificationPayload {
 
     link?    :  string /** Redirect to this link */   
 } 
