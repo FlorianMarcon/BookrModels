@@ -90,6 +90,7 @@ export interface IOrder {
 	user?			:	User;
 
 	price			:	number;
+	fee				:	number;
 
 	status			:	OrderStatus;
 
