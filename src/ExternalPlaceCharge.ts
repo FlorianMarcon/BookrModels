@@ -14,8 +14,8 @@ export interface ExternalPlaceCharge {
 	/** Id of the place having charge */
 	idPlace	:	number;
 
-	/** Id of the destinary stripe account  */
-	idDestinaryStripeAccount	:	number;
+	/** Id of the user getting charge  */
+	idUser	:	number;
 
 	/** Percentage fee */
 	percentageFee				:	number;
@@ -42,8 +42,8 @@ export interface ICreateExternalPlaceChargeInput extends Partial<ExternalPlaceCh
 	/** Id of the place having charge */
 	idPlace	:	number;
 
-	/** Id of the destinary stripe account  */
-	idDestinaryStripeAccount	:	number;
+	/** Id of the destinary  */
+	idUser	:	number;
 
 	/** Percentage fee */
 	percentageFee?				:	number;
@@ -64,7 +64,7 @@ export interface IUpdateExternalPlaceChargeInput extends Partial<ExternalPlaceCh
 	idPlace?	:	number;
 
 	/** Id of the destinary stripe account  */
-	idDestinaryStripeAccount?	:	number;
+	idUser?	:	number;
 
 	/** Percentage fee */
 	percentageFee?				:	number;
