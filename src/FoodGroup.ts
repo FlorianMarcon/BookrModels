@@ -8,13 +8,16 @@ export interface FoodGroup {
 	
 	name				:	string;
 
-	place				:	Place;
-
-	foods				:	Array<Food>;
-
 	index				:	number;
 
+	isPublic			:	boolean;
+
+	/** FIELD RESOLVERS */
+	place				:	Place;
+
 	menues				:	Array<Menu>
+
+	foods				:	Array<Food>;
 }
 
 export interface ICreateFoodGroupInput {
@@ -27,4 +30,6 @@ export interface IUpdateFoodGroupInput {
 	name?				:	string;
 
 	index?				:	number;
+
+	isPublic?			:	boolean;
 }
