@@ -30,4 +30,6 @@ export interface SendNotificationOptions {
     idUsers?     :   Array<number>; /** Users id */
 
     platform?    :   Platform; /** Filter by platform */
+
+    includeUnauthenticated?  :   boolean; /** Send notification to unhautenticated users */
 } 
