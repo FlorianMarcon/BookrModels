@@ -1,6 +1,6 @@
 import { Food } from "./Food";
 import { Menu } from "./Menu";
-import { Place } from "./Place";
+import { Place } from "./place/Place";
 import { User } from "./User";
 import { Submenu } from "./Submenu";
 import { SubmenuItem } from "./SubmenuItem";

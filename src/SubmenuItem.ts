@@ -1,5 +1,5 @@
 import { Food } from "./Food";
-import { Place } from "./Place";
+import { Place } from "./place/Place";
 import { Submenu } from "./Submenu";
 
 /**

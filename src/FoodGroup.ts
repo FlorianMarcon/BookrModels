@@ -1,4 +1,4 @@
-import {Place} from "./Place";
+import {Place} from "./place/Place";
 import { Food } from "./Food";
 import { Menu } from "./Menu";
 

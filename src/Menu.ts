@@ -1,5 +1,5 @@
 import { FoodGroup } from "./FoodGroup";
-import { Place } from "./Place";
+import { Place } from "./place/Place";
 import { Submenu, ICreateSubmenuInput } from "./Submenu";
 
 export interface Menu {

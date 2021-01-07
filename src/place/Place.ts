@@ -1,7 +1,7 @@
 import { PlaceCategory } from "./PlaceCategory";
-import { FoodGroup } from "./FoodGroup";
-import { Menu } from "./Menu";
-import { DateTimeSlot } from "./DateTimeSlot";
+import { FoodGroup } from "../FoodGroup";
+import { Menu } from "../Menu";
+import { DateTimeSlot } from "../DateTimeSlot";
 
 export enum PaymentMethod {
 	NO_VERIFICATION = "NO_VERIFICATION",
