@@ -13,8 +13,8 @@ export interface Place {
 	_id			:	number;
 	
 	name		:	string;
-
 	description	:	string;
+	subdomain?	:	string | undefined; /** (optional) Subdomain attribuate at the place */
 
 	city		:	string;
 	line1		:	string;
@@ -56,6 +56,7 @@ export interface ICreatePlaceInput extends Partial<Place> {
 	name	:	string;
 
 	description?	:	string;
+	subdomain?		:	string; /** (optional) Subdomain attribuate at the place */
 
 	city		:	string;
 	line1		:	string;
@@ -90,9 +91,9 @@ export interface IUpdatePlaceInput {
 
 	_id					:	number;
 
-	name?				:	string;
-
-	description?	:	string;
+	name?			:	string;
+	description?	:	string; /** (optional) Subdomain attribuate at the place */
+	subdomain?		:	string;
 
 	city?		:	string;
 	line1?		:	string;
