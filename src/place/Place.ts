@@ -2,6 +2,7 @@ import { PlaceCategory } from "./PlaceCategory";
 import { FoodGroup } from "../FoodGroup";
 import { Menu } from "../Menu";
 import { DateTimeSlot } from "../DateTimeSlot";
+import { Theme } from "../customization/Theme";
 
 export enum PaymentMethod {
 	NO_VERIFICATION = "NO_VERIFICATION",
@@ -15,6 +16,7 @@ export interface Place {
 	name		:	string;
 	description	:	string;
 	subdomain?	:	string | undefined; /** (optional) Subdomain attribuate at the place */
+	theme?		:	Theme; /** (can be null) Theme of the place */
 
 	city		:	string;
 	line1		:	string;

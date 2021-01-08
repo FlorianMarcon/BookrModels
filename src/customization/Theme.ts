@@ -14,14 +14,14 @@ export interface Theme {
 
 export interface ICreateTheme {
 
-	primary?	:	Palette | undefined; /** Represent primary color */
+	primary?	:	Palette | undefined | null; /** Represent primary color */
 
-	secondary?	:	Palette | undefined; /** Represent secondary color */
+	secondary?	:	Palette | undefined | null; /** Represent secondary color */
 }
 
 export interface IUpdateTheme {
 
-	primary?	:	Palette | undefined; /** Represent primary color */
+	primary?	:	Palette | undefined | null; /** Represent primary color */
 
-	secondary?	:	Palette | undefined; /** Represent secondary color */
+	secondary?	:	Palette | undefined | null; /** Represent secondary color */
 }
