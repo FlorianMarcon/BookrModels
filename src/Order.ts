@@ -19,6 +19,12 @@ export enum OrderStatus {
 	COLLECT = "COLLECT",
 };
 
+export enum OrderSource {
+	MARKET_PLACE_MOBILE = "MARKET_PLACE_MOBILE", /** Order done on market place */
+	WEB_WHITE_MARKING = "WEB_WHITE_MARKING", /** Order done on web page */
+	BY_PLACE_BACKOFFICE = "BY_PLACE_BACKOFFICE", /** Order given by place */
+};
+
 export interface ICreateOrderSubmenuInput {
 	idSubmenu		:	number;
 	idFoods?			:	Array<number> | null;
@@ -46,6 +52,10 @@ export interface ICreateOrderInput {
 	stripeToken	:	string;
 
 	comment?	:	string;
+
+	source			: 	OrderSource; /** From where the order is comming */
+
+	metadata?		:	object | undefined; /** Metadata to stock informations. Metadata can be any type. You just need to wrap in a string JSON.stringify()*/
 }
 
 export interface IOrderSubmenu {
@@ -93,6 +103,8 @@ export interface IOrder {
 	fee				:	number;
 
 	status			:	OrderStatus;
+	source			: 	OrderSource; /** From where the order is comming */
+	metadata?		:	object | undefined; /** Metadata to stock informations */
 
 	idPlace			:	number;
 	place?			:	Place;
@@ -103,13 +115,10 @@ export interface IOrder {
 	menues			:	Array<IOrderMenu>;
 
 	date			:	Date;
-
 	orderReference	:	String;
 
 	phone?			:	string;
-
 	comment?		:	string;
-
 	customer?		:	User;
 }
 
